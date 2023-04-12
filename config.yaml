@@ -26,12 +26,6 @@ dotfiles:
   f_st_config.def.h:
     src: st/config.def.h
     dst: ~/st/config.def.h
-  d_st:
-    src: st
-    dst: ~/st
-  d_dwm:
-    src: dwm
-    dst: ~/dwm
   f_config.conf:
     src: config/neofetch/config.conf
     dst: ~/.config/neofetch/config.conf
@@ -44,6 +38,4 @@ profiles:
     - f_xbindkeysrc
     - f_config.def.h
     - f_st_config.def.h
-    - d_st
-    - d_dwm
     - f_config.conf
