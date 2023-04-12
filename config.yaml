@@ -1,0 +1,49 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+dotfiles:
+  f_xinitrc:
+    src: xinitrc
+    dst: ~/.xinitrc
+  f_bashrc:
+    src: bashrc
+    dst: ~/.bashrc
+  f_bash_profile:
+    src: bash_profile
+    dst: ~/.bash_profile
+  f_xbindkeysrc:
+    src: xbindkeysrc
+    dst: ~/.xbindkeysrc
+  f_config.def.h:
+    src: dwm/config.def.h
+    dst: ~/dwm/config.def.h
+  f_st_config.def.h:
+    src: st/config.def.h
+    dst: ~/st/config.def.h
+  d_st:
+    src: st
+    dst: ~/st
+  d_dwm:
+    src: dwm
+    dst: ~/dwm
+  f_config.conf:
+    src: config/neofetch/config.conf
+    dst: ~/.config/neofetch/config.conf
+profiles:
+  ThinkPad-P50:
+    dotfiles:
+    - f_xinitrc
+    - f_bashrc
+    - f_bash_profile
+    - f_xbindkeysrc
+    - f_config.def.h
+    - f_st_config.def.h
+    - d_st
+    - d_dwm
+    - f_config.conf

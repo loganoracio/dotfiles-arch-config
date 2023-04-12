@@ -1,0 +1,17 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+shopt -s autocd
+shopt -s cdspell
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+export DOTDROP_CONFIG="/home/failsafe/dotfiles-arch-config/config.yaml"
+
+PS1='\u :\W\$ '
+
+neofetch

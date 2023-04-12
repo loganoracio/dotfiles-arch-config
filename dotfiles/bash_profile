@@ -1,0 +1,7 @@
+#
+# ~/.bash_profile
+#
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+sudo chmod a+w /sys/class/backlight/intel_backlight/brightness
+startx

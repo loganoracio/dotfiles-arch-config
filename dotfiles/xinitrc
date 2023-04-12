@@ -1,0 +1,6 @@
+setxkbmap fr
+xbindkeys
+nitrogen --restore &
+xcompmgr &
+exec dwm
+dwmblocks &
